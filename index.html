@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@andres112013" />
+    <meta property="twitter:creator" content="@andres112013" />
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cosva" />
+    <meta property="og:title" content="Cosva manage your Farm" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="Cosva is an application to control and manage your animals."
+    />
+    <meta
+      name="description"
+      content="Cosva is an application to control and manage your animals."
+    />
+    <meta property="al:android:app_name" content="Cosva" />
+    <meta property="al:android:package" content="com.cosva.katana" />
+    <meta property="al:android:url" content="cv://feed/" />
+    <meta property="al:ios:app_name" content="Cosva" />
+    <link rel="canonical" href="https://cosva.app" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no"
+    />
+    <title>Cosva</title>
+    <script type="module" crossorigin src="/assets/index-60a9ad09.js"></script>
+    <link rel="stylesheet" href="/assets/index-02c96895.css">
+  </head>
+  <body>
+    <div id="root">
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #fafafa;
+        }
+
+        *,
+        ::after,
+        ::before {
+          box-sizing: border-box;
+        }
+
+        .container {
+          width: 200px;
+          height: 100px;
+          padding-top: 100px;
+          margin: 0 auto;
+        }
+
+        .ballParent {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          place-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          height: 100vh;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+
+        .loader-dots {
+          color: #7b7b7bab;
+          font-size: 3em;
+          text-indent: -9999em;
+          overflow: hidden;
+          width: 1em;
+          height: 1em;
+          border-radius: 50%;
+          position: relative;
+          -webkit-transform: translateZ(0);
+          -ms-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-animation: load6 1.3s infinite ease,
+            round 1.3s infinite ease;
+          animation: load6 1.3s infinite ease,
+            round 1.3s infinite ease;
+        }
+        @-webkit-keyframes load6 {
+          0% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+              0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em,
+              0 -0.83em 0 -0.477em;
+          }
+          5%,
+          95% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+              0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em,
+              0 -0.83em 0 -0.477em;
+          }
+          10%,
+          59% {
+            box-shadow: 0 -0.83em 0 -0.4em,
+              -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em,
+              -0.256em -0.789em 0 -0.46em,
+              -0.297em -0.775em 0 -0.477em;
+          }
+          20% {
+            box-shadow: 0 -0.83em 0 -0.4em,
+              -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em,
+              -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+          }
+          38% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+              -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+              -0.82em -0.09em 0 -0.477em;
+          }
+          100% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+              0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em,
+              0 -0.83em 0 -0.477em;
+          }
+        }
+        @keyframes load6 {
+          0% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+              0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em,
+              0 -0.83em 0 -0.477em;
+          }
+          5%,
+          95% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+              0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em,
+              0 -0.83em 0 -0.477em;
+          }
+          10%,
+          59% {
+            box-shadow: 0 -0.83em 0 -0.4em,
+              -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em,
+              -0.256em -0.789em 0 -0.46em,
+              -0.297em -0.775em 0 -0.477em;
+          }
+          20% {
+            box-shadow: 0 -0.83em 0 -0.4em,
+              -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em,
+              -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+          }
+          38% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+              -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+              -0.82em -0.09em 0 -0.477em;
+          }
+          100% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+              0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em,
+              0 -0.83em 0 -0.477em;
+          }
+        }
+        @-webkit-keyframes round {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes round {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+
+        .loader {
+          position: relative;
+          display: flex;
+          user-select: none;
+          margin-bottom: 3em;
+        }
+
+        .loader span {
+          color: rgb(255, 255, 255);
+          margin: 0 15px;
+          font-size: 11vw;
+          font-weight: bold;
+          animation: animate 1.5s linear infinite;
+          font-family: sans-serif;
+        }
+
+        @media screen and (min-width: 720px) {
+          .loader span {
+            font-size: 4em;
+          }
+
+          .loader {
+            margin-bottom: 6em;
+          }
+
+          .loader-dots {
+            font-size: 4em;
+          }
+        }
+
+        @media screen and (min-width: 1200px) {
+          .loader span {
+            font-size: 6em;
+          }
+
+          .loader {
+            font-size: 10px;
+            margin-bottom: 8em;
+          }
+
+          .loader-dots {
+            font-size: 6em;
+          }
+        }
+
+        .loader span:nth-child(1) {
+          animation-delay: 0s;
+        }
+        .loader span:nth-child(2) {
+          animation-delay: 0.1s;
+        }
+        .loader span:nth-child(3) {
+          animation-delay: 0.2s;
+        }
+        .loader span:nth-child(4) {
+          animation-delay: 0.3s;
+        }
+        .loader span:nth-child(5) {
+          animation-delay: 0.4s;
+        }
+
+        @keyframes animate {
+          0% {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: scale(1);
+          }
+          40% {
+            text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transform: scale(1.4);
+          }
+          80%,
+          100% {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            transform: scale(1);
+          }
+        }
+      </style>
+      <div class="ballParent">
+        <div class="loader">
+          <span>C</span>
+          <span>o</span>
+          <span>s</span>
+          <span>v</span>
+          <span>a</span>
+        </div>
+        <div>
+          <div class="loader-dots">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <div class="container">
+        <div>
+          La página que estás viendo requiere para su funcionamiento
+          el uso de JavaScript.Si lo has deshabilitado
+          intencionadamente, por favor vuelve a activarlo.
+        </div>
+      </div>
+    </noscript>
+    
+  </body>
+</html>
